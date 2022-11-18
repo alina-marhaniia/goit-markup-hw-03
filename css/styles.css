@@ -17,7 +17,6 @@
 body {
   font-family: var(--main-font);
   letter-spacing: 0.03em;
-
   color: var(--secondary-text-color);
 }
 
@@ -27,7 +26,7 @@ body {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  outline: 1px solid tomato;
+  /* outline: 1px solid tomato; */
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -38,6 +37,10 @@ h3,
 p {
   margin-bottom: 0;
   margin-top: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
 }
 
 .section {
@@ -153,10 +156,6 @@ p {
   padding-bottom: 32px;
 }
 
-/* .site-nav .item {
-  background-color: red;
-} */
-
 .site-nav .item:not(:last-child) {
   margin-right: 50px;
 }
@@ -229,9 +228,6 @@ p {
 .works {
   display: flex;
 }
-.img {
-  display: block;
-}
 
 .works .item + .item {
   margin-left: var(--element-gap);
@@ -251,6 +247,10 @@ p {
 
 .team {
   background-color: #f5f4fa;
+}
+
+.team-description {
+  padding-bottom: 30px;
 }
 .team-title {
   font-size: 36px;
@@ -319,27 +319,33 @@ p {
 .filter {
   display: flex;
   justify-content: center;
+  margin-bottom: 34px;
 }
 .filter .item + .item {
   margin-left: 8px;
 }
-
 .portfolio-projects {
   display: flex;
   flex-wrap: wrap;
-  margin-right: calc(-1 * var(--element-gap));
-  margin-bottom: ;
+  margin-left: calc(-1 * var(--element-gap));
+  margin-top: calc(-1 * var(--element-gap));
 }
-.portfolio-projects > .portfolio-element {
+.portfolio-projects > .item {
+  /* outline: 1px solid tomato; */
   flex-basis: calc(100% / 3 - var(--element-gap));
+  margin-left: var(--element-gap);
+  margin-top: var(--element-gap);
 }
-
 .portfolio-title {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 
   color: var(--secondary-text-color);
+}
+.portfolio-content {
+  padding: 20px 24px;
+  text-align: left;
 }
 .portfolio-filter {
   font-size: 16px;
@@ -363,15 +369,4 @@ p {
 .portfolio-button:focus {
   color: var(--main-color);
   background-color: var(--accent-color);
-}
-.portfolio-element {
-  width: 370px;
-  margin-right: var(--element-gap);
-  margin-bottom: var(--element-gap);
-}
-.portfolio-element:nth-child(3n) {
-  margin-right: 0;
-}
-.portfolio-element:nth-last-child(-n + 3) {
-  margin-bottom: 0;
 }
