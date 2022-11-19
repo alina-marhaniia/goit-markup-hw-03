@@ -163,6 +163,8 @@ img {
 /* ---------- Герой ----------*/
 .hero {
   background: var(--dark-background-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -183,7 +185,6 @@ img {
   color: var(--main-color);
   background-color: var(--accent-color);
   padding: 10px 32px;
-  margin-bottom: 200px;
 }
 
 /* -----------Особливості----------- */
@@ -196,6 +197,9 @@ img {
   color: var(--secondary-text-color);
 }
 
+.about {
+  padding-bottom: 0;
+}
 .about-text {
   font-size: 14px;
   line-height: 1.71;
@@ -251,6 +255,7 @@ img {
 
 .team-description {
   padding-bottom: 30px;
+  padding-top: 30px;
 }
 .team-title {
   font-size: 36px;
@@ -262,7 +267,6 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
-  margin-top: var(--element-gap);
 
   color: var(--secondary-text-color);
 }
@@ -286,10 +290,13 @@ img {
 .footer-list {
   margin-top: 20px;
 }
-.footer-list .item + .item {
-  padding-top: 9px;
+.footer-contacts {
+  color: rgba(255, 255, 255, 0.6);
+  display: block;
 }
-
+.footer-list .item + .item {
+  padding-top: 12px;
+}
 .footer-logo {
   color: var(--main-color);
 }
@@ -304,9 +311,7 @@ img {
 .map {
   color: var(--main-color);
 }
-.footer-contacts {
-  color: rgba(255, 255, 255, 0.6);
-}
+
 .footer-contacts:hover,
 .footer-contacts:focus {
   color: var(--accent-color);
@@ -319,7 +324,7 @@ img {
 .filter {
   display: flex;
   justify-content: center;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 .filter .item + .item {
   margin-left: 8px;
@@ -346,6 +351,7 @@ img {
 .portfolio-content {
   padding: 20px 24px;
   text-align: left;
+  border: 1px solid #eeeeee;
 }
 .portfolio-filter {
   font-size: 16px;
